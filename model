@@ -1,0 +1,32 @@
+___________
+MODEL :
+___________
+
+
+Query Expansion : process of adding additional terms to the original query in order to improve retrieval performance.
+___________________________________________________________________________________________________________________________
+
+1.) the users‘ initial queries and the retrieved documents based on the user‘s query (top n relevant documents) are analyzed
+
+2.) then the relevant terms from the documents retrieved are weighted
+
+3.) the terms having higher weight and the terms from the previous searches with a greater threshold weight will be selected and are used to derive concepts in the concept network ( graph consisiting of concepts and phrases ) which ae then connected to phrases.
+
+4.) Based on matching of those phrases with the query phrases, additional query terms are selected and based on this the users original query is expanded and the search is enhanced.
+
+
+
+Query Reformulation : Formulate the initial query through query expansion and term weighting. Involves 2 basic steps :
+_______________________________________________________________________________________________________________________
+
+1.) Expanding the initial query with new terms and weighting the terms in the expanded query. This can be achieved using following approaches :
+	
+		i.) based on feedback from the user.
+
+		ii.) based on global information from the document collection.
+
+		iii.) Pseudo relevance feedback ( PRF ) approaches based on info. retrieved from a set of initially retrieved docs. - only those documents which are on the top of the list are considered as relevant.
+
+2.) Construction of user profile 
+
+
